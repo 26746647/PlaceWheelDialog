@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/multi_selector_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.view.WheelView.WheelView
+        android:id="@+id/am_pm"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content" />
+
+    <com.view.WheelView.WheelView
+        android:id="@+id/clockadd_hour"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content" />
+
+    <com.view.WheelView.WheelView
+        android:id="@+id/clockadd_minutes"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

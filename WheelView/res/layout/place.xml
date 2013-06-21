@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	>
+
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="400dip"
+		android:layout_gravity="center_horizontal" android:paddingLeft="12dp"
+		android:paddingRight="12dp" android:paddingTop="10dp" android:id="@+id/timePicker1">
+    
+    <com.view.WheelView.WheelView
+        android:id="@+id/province"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content" />
+
+    <com.view.WheelView.WheelView
+        android:id="@+id/city"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content" />
+
+    <com.view.WheelView.WheelView
+        android:id="@+id/area"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content" />
+    
+    	</LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+		android:layout_below="@id/timePicker1" android:layout_marginTop="12dp"
+		android:layout_centerInParent="true">
+		<Button android:id="@+id/btn_datetime_sure"
+			android:layout_width="wrap_content" 
+			android:visibility="gone"
+			android:layout_below="@id/timePicker1" android:layout_height="wrap_content"></Button>
+		<Button android:id="@+id/btn_datetime_cancel"
+			android:layout_toRightOf="@id/btn_datetime_sure"
+			android:visibility="gone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/timePicker1"></Button>
+	</LinearLayout>
+
+</RelativeLayout>
